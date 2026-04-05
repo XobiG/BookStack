@@ -1,0 +1,46 @@
+@page "/catalog"
+@inject HttpClient Http
+
+<h3>Katalog</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th>Autor</th>
+            <th>ISBN</th>
+            <th>Genre</th>
+            <th>Bestand</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in books)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.ISBN</td>
+                <td>@book.Genre</td>
+                <td>@book.Stock</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<BookDto> books = new()
+    {
+        new BookDto { Title = "Der Prozess", Author = "Franz Kafka", ISBN = "978-3-16-148410-0", Genre = "Roman", Stock = 5 },
+        new BookDto { Title = "Faust", Author = "Johann W. Goethe", ISBN = "978-3-16-148410-1", Genre = "Drama", Stock = 3 },
+        new BookDto { Title = "Effi Briest", Author = "Theodor Fontane", ISBN = "978-3-16-148410-2", Genre = "Roman", Stock = 2 }
+    };
+
+    public class BookDto
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
+        public string Genre { get; set; }
+        public int Stock { get; set; }
+    }
+}

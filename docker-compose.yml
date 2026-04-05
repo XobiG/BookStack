@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: bookstack
+      POSTGRES_PASSWORD: bookstackpw
+      POSTGRES_DB: bookstackdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  catalog:
+    build:
+      context: ./BookStack.Server.Catalog
+    environment:
+      - ConnectionStrings__Default=Host=db;Port=5432;Database=bookstackdb;Username=bookstack;Password=bookstackpw
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
