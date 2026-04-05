@@ -9,3 +9,4 @@ C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net9.0\BookSta
 C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net9.0\refint\BookStack.Shared.dll
 C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net9.0\BookStack.Shared.pdb
 C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net9.0\ref\BookStack.Shared.dll
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net9.0\BookStack.Shared.sourcelink.json
