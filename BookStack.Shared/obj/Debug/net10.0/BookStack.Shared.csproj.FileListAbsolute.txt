@@ -1,0 +1,12 @@
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\bin\Debug\net10.0\BookStack.Shared.deps.json
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\bin\Debug\net10.0\BookStack.Shared.dll
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\bin\Debug\net10.0\BookStack.Shared.pdb
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.AssemblyInfoInputs.cache
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.AssemblyInfo.cs
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.sourcelink.json
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.dll
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\refint\BookStack.Shared.dll
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\BookStack.Shared.pdb
+C:\Users\Tobias\source\repos\BookStack\BookStack.Shared\obj\Debug\net10.0\ref\BookStack.Shared.dll

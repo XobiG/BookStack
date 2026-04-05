@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ALdf3E20b+g=",
+  "dgSpecHash": "RagVeOjuKFQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tobias\\source\\repos\\BookStack\\BookStack.Client.Blazor\\BookStack.Client.Blazor.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.5\\microsoft.aspnetcore.components.webassembly.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\10.0.5\\microsoft.aspnetcore.components.webassembly.devserver.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.5\\microsoft.aspnetcore.metadata.10.0.5.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.dotnet.hotreload.webassembly.browser\\10.0.201\\microsoft.dotnet.hotreload.webassembly.browser.10.0.201.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.5\\microsoft.extensions.configuration.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.5\\microsoft.extensions.configuration.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.5\\microsoft.extensions.configuration.binder.10.0.5.nupkg.sha512",

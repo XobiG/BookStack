@@ -1,4 +1,6 @@
+using BookStack.Server.Catalog.Data;
 using BookStack.Shared;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,27 +11,29 @@ builder.Services.AddCors(options =>
         policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+// Migrationen beim Start automatisch anwenden
+using (var scope = app.Services.CreateScope())
 {
-    app.MapOpenApi();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
 }
+
+if (app.Environment.IsDevelopment())
+    app.MapOpenApi();
 
 app.UseCors();
 
-var books = new List<BookDto>
-{
-    new() { Id = 1, Title = "Der Prozess",  Author = "Franz Kafka",       ISBN = "978-3-16-148410-0", Genre = "Roman", Stock = 5 },
-    new() { Id = 2, Title = "Faust",        Author = "Johann W. Goethe",  ISBN = "978-3-16-148410-1", Genre = "Drama", Stock = 3 },
-    new() { Id = 3, Title = "Effi Briest",  Author = "Theodor Fontane",   ISBN = "978-3-16-148410-2", Genre = "Roman", Stock = 2 },
-};
-
-app.MapGet("/api/books", () => books)
+app.MapGet("/api/books", async (AppDbContext db) =>
+    await db.Books.ToListAsync())
    .WithName("GetBooks");
 
-app.MapGet("/api/books/{id}", (int id) =>
-    books.FirstOrDefault(b => b.Id == id) is BookDto book
+app.MapGet("/api/books/{id}", async (int id, AppDbContext db) =>
+    await db.Books.FindAsync(id) is BookDto book
         ? Results.Ok(book)
         : Results.NotFound())
    .WithName("GetBookById");

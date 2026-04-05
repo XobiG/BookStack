@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookStack.Client.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a86d3a0e8a830d5021ea8fb75d51375004fcf9b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ee344ef43e6fb257e7dfb53fa933ca6b8108130")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookStack.Client.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookStack.Client.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
