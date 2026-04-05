@@ -5,6 +5,9 @@ build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.VerifyReferenceTrimCompatibility = 
 build_property.VerifyReferenceAotCompatibility = 
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net10.0
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
@@ -32,16 +35,8 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tobias/source/repos/BookStack/BookStack.Client.Blazor/Components/BooksTable.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCb29rc1RhYmxlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Tobias/source/repos/BookStack/BookStack.Client.Blazor/Pages/Catalog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Tobias/source/repos/BookStack/BookStack.Client.Blazor/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Tobias/source/repos/BookStack/BookStack.Client.Blazor/_Imports.razor]

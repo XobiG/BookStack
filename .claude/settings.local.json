@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(dotnet ef:*)",
-      "Bash(docker exec:*)"
+      "Bash(docker exec:*)",
+      "Bash(dotnet add:*)",
+      "Bash(dotnet build:*)"
     ]
   }
 }

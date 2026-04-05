@@ -1,30 +1,58 @@
+@page "/"
 @page "/catalog"
-@using BookStack.Shared
 @inject HttpClient Http
 
-<h3>Bücher-Katalog</h3>
+<PageTitle>Bücherkatalog – BookStack</PageTitle>
+
+<MudText Typo="Typo.h5" GutterBottom="true">Bücherkatalog</MudText>
 
 @if (isLoading)
 {
-    <p>Lade Bücher...</p>
-}
-else if (errorMessage is not null)
-{
-    <div class="alert alert-warning">
-        <strong>API nicht erreichbar</strong> – Dummy-Daten werden angezeigt.<br />
-        <small>@errorMessage</small>
-    </div>
-    <BooksTable Books="books" />
+    <MudProgressLinear Indeterminate="true" Color="Color.Primary" Class="mb-2" />
 }
 else
 {
-    <BooksTable Books="books" />
+    @if (errorMessage is not null)
+    {
+        <MudAlert Severity="Severity.Warning" Dense="true" Class="mb-2">
+            API nicht erreichbar – Dummy-Daten werden angezeigt.
+        </MudAlert>
+    }
+
+    <div style="flex:1; min-height:0; overflow:hidden;">
+        <MudDataGrid T="BookDto" Items="books" SortMode="SortMode.Multiple" Filterable="true"
+                     QuickFilter="QuickFilter" Hover="true" Striped="true" Bordered="true"
+                     FixedHeader="true" FixedFooter="true"
+                     Height="100%" Style="width:100%;">
+            <ToolBarContent>
+                <MudSpacer />
+                <MudTextField @bind-Value="searchString"
+                              Placeholder="Suchen..."
+                              Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Search"
+                              IconSize="Size.Medium"
+                              Immediate="true"
+                              Class="mt-0" />
+            </ToolBarContent>
+            <Columns>
+                <PropertyColumn Property="b => b.Title"  Title="Titel" />
+                <PropertyColumn Property="b => b.Author" Title="Autor" />
+                <PropertyColumn Property="b => b.ISBN"   Title="ISBN" />
+                <PropertyColumn Property="b => b.Genre"  Title="Genre" />
+                <PropertyColumn Property="b => b.Stock"  Title="Bestand" />
+            </Columns>
+            <PagerContent>
+                <MudDataGridPager T="BookDto" />
+            </PagerContent>
+        </MudDataGrid>
+    </div>
 }
 
 @code {
     private List<BookDto> books = new();
     private bool isLoading = true;
     private string? errorMessage;
+    private string searchString = string.Empty;
 
     private static readonly List<BookDto> DummyBooks = new()
     {
@@ -50,4 +78,11 @@ else
             isLoading = false;
         }
     }
+
+    private Func<BookDto, bool> QuickFilter => b =>
+        string.IsNullOrWhiteSpace(searchString) ||
+        b.Title.Contains(searchString,  StringComparison.OrdinalIgnoreCase) ||
+        b.Author.Contains(searchString, StringComparison.OrdinalIgnoreCase) ||
+        b.ISBN.Contains(searchString,   StringComparison.OrdinalIgnoreCase) ||
+        b.Genre.Contains(searchString,  StringComparison.OrdinalIgnoreCase);
 }

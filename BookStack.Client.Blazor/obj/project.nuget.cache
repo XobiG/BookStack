@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RagVeOjuKFQ=",
+  "dgSpecHash": "t7Zp9zSJSos=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tobias\\source\\repos\\BookStack\\BookStack.Client.Blazor\\BookStack.Client.Blazor.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,8 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.5\\microsoft.extensions.fileproviders.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.5\\microsoft.extensions.fileproviders.physical.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.5\\microsoft.extensions.filesystemglobbing.10.0.5.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.localization\\10.0.1\\microsoft.extensions.localization.10.0.1.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\10.0.1\\microsoft.extensions.localization.abstractions.10.0.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.logging\\10.0.5\\microsoft.extensions.logging.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.options\\10.0.5\\microsoft.extensions.options.10.0.5.nupkg.sha512",
@@ -36,6 +38,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.5\\microsoft.jsinterop.webassembly.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.5\\microsoft.net.illink.tasks.10.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.5\\microsoft.net.sdk.webassembly.pack.10.0.5.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\mudblazor\\9.2.0\\mudblazor.9.2.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\10.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.10.0.5.nupkg.sha512"
   ],
   "logs": []

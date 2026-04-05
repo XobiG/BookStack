@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "BookStack.Client.Blazor",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-L+lHBzXFT8RRwrqFKZEc1UZbdGuiduP+KRY3Ygec9ZI=",
+    "hash": "sha256-Hwv0WN4eXFU4haoHApfl2UYyJjzjuTVWqtc/oz95JeU=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.ykrnppwhq2.js"
@@ -173,6 +173,18 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
         "cache": "force-cache"
       },
       {
+        "virtualPath": "Microsoft.Extensions.Localization.wasm",
+        "name": "Microsoft.Extensions.Localization.xcslyy3nju.wasm",
+        "integrity": "sha256-L2P/tLhZ6FSR1KG27vIE/jer8JBjOAPRMf7D9eFEUNs=",
+        "cache": "force-cache"
+      },
+      {
+        "virtualPath": "Microsoft.Extensions.Localization.Abstractions.wasm",
+        "name": "Microsoft.Extensions.Localization.Abstractions.6jkolue1ka.wasm",
+        "integrity": "sha256-8grIRMMlBKEKAmoTlVDM1GNP0SIWIFWIJHeqfc6fel4=",
+        "cache": "force-cache"
+      },
+      {
         "virtualPath": "Microsoft.Extensions.Logging.wasm",
         "name": "Microsoft.Extensions.Logging.y4ydx3rk2c.wasm",
         "integrity": "sha256-7rQS5FTbW6HOY7Az4Q4xfopDObDh6RaYVVBpy2gddis=",
@@ -218,6 +230,12 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
         "virtualPath": "Microsoft.JSInterop.WebAssembly.wasm",
         "name": "Microsoft.JSInterop.WebAssembly.oz8fkrrrd6.wasm",
         "integrity": "sha256-vNQI+7PzYwneCfXCfLMKUdjpMicKS0Ihwi/xu1KAywU=",
+        "cache": "force-cache"
+      },
+      {
+        "virtualPath": "MudBlazor.wasm",
+        "name": "MudBlazor.k6079czmkm.wasm",
+        "integrity": "sha256-rAWwqD56vrMaVnbnDn2OUp7WOeNWO7wmZlQczvKeZLI=",
         "cache": "force-cache"
       },
       {
@@ -1242,28 +1260,28 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "BookStack.Shared.wasm",
-        "name": "BookStack.Shared.d7xgrkg9le.wasm",
-        "integrity": "sha256-GRcTiQvlghA7Gxfau0ee3oD6V/oU6QLSrJDbgaU/Qls=",
+        "name": "BookStack.Shared.w804mjsnzf.wasm",
+        "integrity": "sha256-QFztXMdDsOh/BVOOP34NRbCrT5UHUTwnt7DWECuDOjU=",
         "cache": "force-cache"
       },
       {
         "virtualPath": "BookStack.Client.Blazor.wasm",
-        "name": "BookStack.Client.Blazor.cl96i8cw10.wasm",
-        "integrity": "sha256-EKhkU4Gxl15CiTbLlsyb+Zmd0eQR8X6O95I17MqZWBA=",
+        "name": "BookStack.Client.Blazor.f6uqovssxc.wasm",
+        "integrity": "sha256-R88pm0CF/7oKSxc3RL+uli6MZwi+eTARdS+tQeZOPkk=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "BookStack.Shared.pdb",
-        "name": "BookStack.Shared.y8oe5abtbh.pdb",
-        "integrity": "sha256-Qu+GUOr7ho0VJKOMZRDjRLl4LZXYNwN37dnE+sunofY=",
+        "name": "BookStack.Shared.plexob6yyf.pdb",
+        "integrity": "sha256-LcyA/agBJBoiInVeuR8151Ykj7R/gHUMhrW5PLkS3xE=",
         "cache": "force-cache"
       },
       {
         "virtualPath": "BookStack.Client.Blazor.pdb",
-        "name": "BookStack.Client.Blazor.todv5qzldh.pdb",
-        "integrity": "sha256-DZQm5cPYNvwwP2LH0/QVRPLaNuRKV5z68lmSH3GqKIQ=",
+        "name": "BookStack.Client.Blazor.uv1fla2w0u.pdb",
+        "integrity": "sha256-SnTN0rh2sVQ1gap896pKvdei/VX9fbKvRWeji61gYCA=",
         "cache": "force-cache"
       }
     ],
